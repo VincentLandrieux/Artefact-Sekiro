@@ -1,0 +1,110 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    color: #fff;
+}
+
+body{
+    background-color: #222;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.character{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-width: 6px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #555;
+
+    transition: border-color .1s;
+}
+.character_player{
+    background-color: #55F;
+}
+.character_enemy{
+    background-color: #F55;
+}
+.character_incharge-attack{
+    border-color: #FA5;
+}
+.character_charge-attack{
+    border-color: #F5F;
+}
+.character_attack{
+    border-color: #F55;
+}
+.character_dodge{
+    border-color: #5F5;
+}
+.character_parry{
+    border-color: #FF5;
+}
+.character_exhausted{
+    border-color: #FFF;
+}
+
+.slide{
+    position: relative;
+    width: 200px;
+    height: 10px;
+    margin: 20px;
+}
+.slide_bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #BBB;
+}
+.slide_lvl{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: right .4s;
+}
+.slide_stamina .slide_lvl{
+    right: 100%;
+    background-color: #FF5;
+}
+.slide_health .slide_lvl{
+    background-color: #F55;
+}
+
+.action{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.action_btn{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 50%;
+}
+.action_attack_btn{
+    background-color: #F55;
+}
+.action_dodge_btn{
+    background-color: #5F5;
+}
+.action_parry_btn{
+    background-color: #FF5;
+}
